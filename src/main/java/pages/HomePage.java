@@ -24,6 +24,7 @@ public class HomePage extends BasePage {
 	private static final By APPLE_CHECKBOX = By.xpath("//span[text()='Apple']//parent::a//div//..//i[@class='a-icon a-icon-checkbox']");
 	
 	public void searchForMobile() throws Exception {
+		handleContinueShopping();
 		clickOnElement(TEXT_BOX);
 		sendKeys(TEXT_BOX, "iPhone 16");
 		captureScreenshot("search");
